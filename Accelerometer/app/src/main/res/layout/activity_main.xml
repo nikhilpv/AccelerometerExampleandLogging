@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.nikhil.accelerometer.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer test"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_light"/>
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        style="@style/TextviewTheme"
+        android:layout_height="wrap_content"
+        android:text="@string/x_value" />
+
+    <TextView
+        android:id="@+id/y"
+        android:layout_width="wrap_content"
+        style="@style/TextviewTheme"
+        android:layout_height="wrap_content"
+        android:text="@string/y_value" />
+
+    <TextView
+        android:id="@+id/z"
+        android:layout_width="wrap_content"
+        style="@style/TextviewTheme"
+        android:layout_height="wrap_content"
+        android:text="@string/z_value"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/save"
+        style="@style/TextviewTheme"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_height="wrap_content"
+        android:text="Save log to file" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:textSize="20sp"
+        android:layout_height="match_parent"
+        android:hint="Nikhil PV" />
+
+</LinearLayout>
