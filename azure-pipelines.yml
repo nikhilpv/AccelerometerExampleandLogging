@@ -12,8 +12,8 @@ pool:
 steps:
 - task: Gradle@2
   inputs:
-    workingDirectory: 'nikhilpv/AccelerometerExampleandLogging'
-    gradleWrapperFile: 'nikhilpv/AccelerometerExampleandLogging/gradlew'
+    workingDirectory: 'AccelerometerExampleandLogging'
+    gradleWrapperFile: 'AccelerometerExampleandLogging/gradlew'
     gradleOptions: '-Xmx3072m'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
@@ -22,7 +22,7 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(build.artifactStagingDirectory)'
   inputs:
-    SourceFolder: 'nikhilpv/AccelerometerExampleandLogging'
+    SourceFolder: 'AccelerometerExampleandLogging'
     Contents: '**/*.apk'
     TargetFolder: '$(build.artifactStagingDirectory)'
 
