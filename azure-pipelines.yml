@@ -12,8 +12,8 @@ pool:
 steps:
 - task: Gradle@2
   inputs:
-    workingDirectory: 'nikhilpv/AccelerometerExampleandLogging/tree/master/Accelerometer'
-    gradleWrapperFile: 'nikhilpv/AccelerometerExampleandLogging/tree/master/Accelerometer/gradlew'
+    workingDirectory: 'AccelerometerExampleandLogging/Accelerometer'
+    gradleWrapperFile: 'AccelerometerExampleandLogging/Accelerometer/gradlew'
     gradleOptions: '-Xmx3072m'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
