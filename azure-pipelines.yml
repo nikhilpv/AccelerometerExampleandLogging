@@ -18,3 +18,9 @@ steps:
     publishJUnitResults: false
     javaHomeOption: 'JDKVersion'
     tasks: 'assembleDebug'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'Accelerometer/app/build/outputs/apk/debug'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
