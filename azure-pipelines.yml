@@ -7,14 +7,14 @@ trigger:
 - master
 
 pool:
-  vmImage: 'macos-latest'
+  vmImage: 'windows-latest'
 
 steps:
 - task: Gradle@2
   inputs:
-    workingDirectory: 'nikhilpv/AccelerometerExampleandLogging'
-    gradleWrapperFile: 'nikhilpv/AccelerometerExampleandLogging/gradlew'
+    workingDirectory: 'Accelerometer/'
+    gradleWrapperFile: 'Accelerometer/gradlew'
     gradleOptions: '-Xmx3072m'
     publishJUnitResults: false
-    testResultsFiles: '**/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
     tasks: 'assembleDebug'
